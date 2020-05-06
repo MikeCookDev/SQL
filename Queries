@@ -1,1 +1,22 @@
 
+ select full_name, email, zip
+ FROM transaction_data
+ where zip = '20252';
+
+ select full_name, email
+ FROM transaction_data
+ where full_name = 'Art Vandelay'
+  OR full_name like '% der %';
+
+ select ip_address, email
+ FROM transaction_data
+ where ip_address LIKE '10.%';
+
+ select email
+ FROM transaction_data
+ where email LIKE '%temp_email.com';
+
+ select *
+ FROM transaction_data
+ Where ip_address like '120.%'
+ and full_name like 'John%';
